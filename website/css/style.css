@@ -539,3 +539,8 @@ h6,
 .copyright a:hover {
     color: var(--primary);
 }
+
+
+.logo img{
+    width: 40px
+}
