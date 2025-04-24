@@ -46,12 +46,12 @@
     <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
         <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
             <div class="col-lg-6 px-5 text-start">
-                <small><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, New York, USA</small>
+                <small><i class="fa fa-map-marker-alt text-primary me-2"></i>28 Topiwal Center, Goregaon West, Mumbai - 400104</small>
                 <small class="ms-4"><i class="fa fa-clock text-primary me-2"></i>9.00 am - 9.00 pm</small>
             </div>
             <div class="col-lg-6 px-5 text-end">
-                <small><i class="fa fa-envelope text-primary me-2"></i>info@example.com</small>
-                <small class="ms-4"><i class="fa fa-phone-alt text-primary me-2"></i>+012 345 6789</small>
+                <small><i class="fa fa-envelope text-primary me-2"></i>promiseline.jscc@gmail.com</small>
+                <small class="ms-4"><i class="fa fa-phone-alt text-primary me-2"></i>+91 9699096803</small>
             </div>
         </div>
 
@@ -67,17 +67,16 @@
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
                     <a href="home.html" class="nav-item nav-link">Home</a>
                     <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="service.html" class="nav-item nav-link">Services</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
                         <div class="dropdown-menu border-light m-0">
-                            <a href="project.html" class="dropdown-item">Projects</a>
-                            <a href="feature.html" class="dropdown-item">Features</a>
-                            <a href="team.html" class="dropdown-item">Team Member</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            <a href="404.html" class="dropdown-item">404 Page</a>
+                            <a href="service.html" class="dropdown-item">Loans</a>
+                            <a href="service.html" class="dropdown-item">Wealth Advisory</a>
+                            <a href="service.html" class="dropdown-item">Corporate Services</a>
+                            <a href="service.html" class="dropdown-item">Fraud Awareness & Social Responsibilities</a>
                         </div>
                     </div>
+                    <a href="blog.html" class="nav-item nav-link">Blogs</a>
                     <a href="contact.html" class="nav-item nav-link active">Contact</a>
                 </div>
                 <div class="d-none d-lg-flex ms-2">
@@ -118,35 +117,33 @@
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                    <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Contact</p>
-                    <h1 class="display-5 mb-4">If You Have Any Query, Please Contact Us</h1>
-                    <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form
-                        with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're
-                        done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
-                    <form>
+                    <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Get in Touch</p>
+                    <h1 class="display-5 mb-4">Have a Question? Let’s Talk!</h1>
+                    <p class="mb-4">Whether you're seeking financial advice, loan support, or investment strategies, we're here to help. Fill out the form below and a member of our team will get back to you shortly.</p>
+                  
+                    <form id="contact-form" method="post" action="your-form-handler.php">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
                                     <label for="name">Your Name</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
                                     <label for="email">Your Email</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
                                     <label for="subject">Subject</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message"
-                                        style="height: 100px"></textarea>
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" name="message" style="height: 100px" required></textarea>
                                     <label for="message">Message</label>
                                 </div>
                             </div>
@@ -155,11 +152,11 @@
                             </div>
                         </div>
                     </form>
-                </div>
+                  </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 450px;">
                     <div class="position-relative rounded overflow-hidden h-100">
                         <iframe class="position-relative w-100 h-100"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d942.179554727378!2d72.84749959999999!3d19.1638079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b6526c7f03a7%3A0xb2292956f597c62d!2sTopiwala%20Center!5e0!3m2!1sen!2sin!4v1745507665567!5m2!1sen!2sin"
                             frameborder="0" style="min-height: 450px; border:0;" allowfullscreen="" aria-hidden="false"
                             tabindex="0"></iframe>
                     </div>
