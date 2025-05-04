@@ -545,6 +545,6 @@ h6,
     width: 40px
 }
 
-#navbarCollapse {
+.navbar-light {
     background: #fff;
 }
