@@ -112,7 +112,7 @@ h6,
 }
 
 .navbar .navbar-nav .nav-link {
-    padding: 25px 15px;
+    padding: 25px 10px;
     color: var(--tertiary);
     font-weight: 500;
     outline: none;
@@ -144,6 +144,7 @@ h6,
         transform-origin: 0% 0%;
         transition: .5s;
         opacity: 0;
+        right: -100%;
     }
 
     .navbar .nav-item:hover .dropdown-menu {
