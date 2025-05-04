@@ -501,12 +501,15 @@ h6,
     background: var(--primary);
 }
 
-
+.footer a.text-white {
+    font-size: 0.75rem;
+}
 /*** Footer ***/
 .footer .btn.btn-link {
     display: block;
     margin-bottom: 5px;
     padding: 0;
+    font-size: 0.75rem;
     text-align: left;
     color: var(--light);
     font-weight: normal;
