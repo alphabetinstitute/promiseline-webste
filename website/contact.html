@@ -172,7 +172,13 @@
                                         <label for="email">Your Email</label>
                                     </div>
                                 </div>
-                                <div class="col-12">
+                                <div class="col-6">
+                                    <div class="form-floating">
+                                        <input type="phone" class="form-control" id="phone" name="phone" placeholder="mobile">
+                                        <label for="phone">Mobile</label>
+                                    </div>
+                                </div>
+                                <div class="col-6">
                                     <div class="form-floating">
                                         <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
                                         <label for="subject">Subject</label>
@@ -284,34 +290,24 @@
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
         <script>
-            const scriptURL = "https://script.google.com/macros/s/AKfycbzTuj7bp2oEW9iqTVhMybsLiyGmNi4-LliME2ZYE6VIeUjBQqW3CdZkkoDYxLnDojtW/exec";
-            const form = document.forms["submit-to-google-sheet"];
-        
-            form.addEventListener("submit", (e) => {
-                e.preventDefault();
-                const formData = new FormData(form);
-        
-                fetch(scriptURL, { method: "POST", body: formData })
-                    .then(response => {
-                        Swal.fire({
-                            icon: 'success',
-                            title: 'Message Sent!',
-                            text: 'Thank you for contacting us. We will get back to you shortly.',
-                            confirmButtonText: 'OK'
-                        });
-                        form.reset();
-                    })
-                    .catch(error => {
-                        console.error("Error!", error.message);
-                        Swal.fire({
-                            icon: 'error',
-                            title: 'Oops...',
-                            text: 'Something went wrong! Please try again later.',
-                            confirmButtonText: 'OK'
-                        });
-                    });
-            });
-        </script>
+           
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyVR6Bjr2fm0JHStLljFMpiLXtVznbhbqJCDwG9xoYMvI-JHpp2zymFI2DYVJqHJViG/exec'; // Replace with your actual URL
+  const form = document.forms['submit-to-google-sheet'];
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => {
+        Swal.fire('Success!', 'Your message has been sent.', 'success');
+        form.reset();
+      })
+      .catch(error => {
+        console.error('Error!', error.message);
+        Swal.fire('Oops!', 'There was a problem submitting the form.', 'error');
+      });
+  });
+</script>
+
         
     </body>
 
