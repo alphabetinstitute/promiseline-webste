@@ -548,6 +548,13 @@ h6,
 .logo img{
     width: 40px
 }
+.logo h1 {
+    font-size: 2rem;
+}
+#navbarCollapse a {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
 
 .navbar-light {
     background: #fff;
