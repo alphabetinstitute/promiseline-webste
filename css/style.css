@@ -546,7 +546,7 @@ h6,
 
 
 .logo img{
-    width: 80px
+    width: 140px
 }
 .logo h1 {
     font-size: 2rem;
@@ -558,4 +558,7 @@ h6,
 
 .navbar-light {
     background: #fff;
+}
+.highlight {
+font-weight: bold;
 }
